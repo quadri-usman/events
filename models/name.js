@@ -1,6 +1,5 @@
 const uuid = require("uuid");
 const mongoose = require("mongoose");
-const { date } = require("faker/lib/locales/az");
 
 const nameSchema = mongoose.Schema(
   {
