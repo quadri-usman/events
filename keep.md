@@ -18,3 +18,5 @@ type: date,
 end_at: {
 type: date,
 },
+
+http://localhost:3000/api/events

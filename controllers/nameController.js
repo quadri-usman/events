@@ -28,15 +28,15 @@ exports.addName = async (req, res) => {
 };
 
 // get all names
-// exports.getNames = async (req, res) => {
-//   try {
-//     Name.find().then((names) => {
-//       res.send(names);
-//     });
-//   } catch (err) {
-//     res.status(500).json({ message: err.message });
-//   }
-// };
+exports.getNames = async (req, res) => {
+  try {
+    Name.find().then((names) => {
+      res.send(names);
+    });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
 // // get single name
 // exports.getName = async (req, res) => {
 //   try {

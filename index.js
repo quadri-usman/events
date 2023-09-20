@@ -13,6 +13,9 @@ const app = express();
 app.use(json());
 
 app.use("/api", name);
+app.get("/", (req, res) => {
+  res.send("Welcome");
+});
 
 const port = process.env.PORT || 3000;
 

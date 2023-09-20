@@ -14,6 +14,21 @@ Content-Type: application/json
       "time": "02:00pm"
 
 }
+####
+POST https://events-production-1bc5.up.railway.app/api/events
+Content-Type: application/json
+
+{
+      
+      "title": "Group meeting",
+      "description": "Breif discussion on the project's progress",
+      "location": "Abuja",
+      "thumbnail": "summary",
+      "group": "team-fortress",
+      "date": "June 12, 2021",
+      "time": "02:00pm"
+
+}
 
 #####
 
@@ -28,7 +43,9 @@ Content-Type: application/json
 ######################################
 GET https://hngtask2-production-98ad.up.railway.app/api/6504250c3419129b46d6422d
 #####################################
-GET https://hngtask2-production-98ad.up.railway.app/api/all
+GET https://events-production-1bc5.up.railway.app/api/events/all
+###
+GET http://localhost:3000/api/events/all
 ######
 PUT https://hngtask2-production-98ad.up.railway.app/api/6504250c3419129b46d6422d
 Content-Type: application/json
